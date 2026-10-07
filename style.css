@@ -1,0 +1,1141 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f3ee;
+    color: #20221f;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 30px 30px;
+    border-bottom: 1px solid #dedcd5;
+}
+
+.navbar nav {
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar nav:hover {
+    color: #315cff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: calc(100vh - 100px);
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background-color: #f5f3ee;
+    background-image: url("images/hero-bg.png");
+    background-size: 48% auto;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    width: 60%;
+}
+
+.role {
+    margin: 0 0 25px;
+    font-size: 13px;
+    color: #315cff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-text {
+    margin: 0;
+}
+
+.hero-text h1 {
+    font-size: clamp(50px, 8vw, 110px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    font-weight: 700;
+}
+
+.hero-text h2 {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.description {
+    margin: 30px 0 0;
+    max-width: 550px;
+    font-size: 18px;
+    color: #555650;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin: 30px 0 0;
+}
+
+.buttons button {
+    padding: 13px 22px;
+    border: 1px solid #20221f;
+    border-radius: 4px;
+    background: #20221f;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: #315cff;
+    border-color: #315cff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.bottom-text {
+    margin: 40px 0 0;
+    padding-bottom: 30px;
+    font-size: 12px;
+    color: #777871;
+    border-bottom: 1px solid #dedcd5;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    margin: 70px 60px 0;
+}
+
+.about > p {
+    font-size: 11px;
+    color: #777871;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.headline {
+    margin-top: 25px;
+}
+
+.headline h2 {
+    font-size: 45px;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 25px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #dedcd5;
+}
+
+.about-info h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.about-info p {
+    max-width: 600px;
+    font-size: 14px;
+    color: #666760;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills {
+    margin: 35px 60px 100px;
+}
+
+.skills > p {
+    margin-bottom: 20px;
+    font-size: 11px;
+    color: #777871;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skill-container {
+    display: flex;
+    border-top: 1px solid #dedcd5;
+}
+
+.skill {
+    flex: 1;
+    min-height: 190px;
+    padding: 30px 25px;
+    border-right: 1px solid #dedcd5;
+}
+
+.skill:first-child {
+    border-left: 1px solid #dedcd5;
+}
+
+.skill h3 {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.skill p {
+    max-width: 250px;
+    font-size: 13px;
+    color: #666760;
+    line-height: 1.6;
+}
+
+.skill:hover {
+    background: #eeece6;
+}
+
+
+/* =========================
+   WORK
+========================= */
+
+.work {
+    padding: 60px;
+    background: #f9f8f4;
+    border-top: 1px solid #dedcd5;
+}
+
+.work > p {
+    font-size: 11px;
+    color: #777871;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.work-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dedcd5;
+}
+
+.work-heading h2 {
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.work-heading p {
+    max-width: 180px;
+    font-size: 10px;
+    color: #777871;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   PROJECT
+========================= */
+
+.project {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    gap: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid #dedcd5;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.project-hover {
+    transform: translateY(-8px);
+}
+
+.project-image {
+    overflow: hidden;
+    border-radius: 7px;
+
+    transition: transform 0.15s ease;
+    transform-style: preserve-3d;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.project-image:hover img {
+    transform: scale(1.02);
+}
+
+.project-info {
+    padding: 5px 20px 20px 0;
+}
+
+.project-info > p:first-child {
+    margin-bottom: 12px;
+    font-size: 10px;
+    color: #315cff;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.project-info h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #20221f;
+
+    transition: transform 0.4s ease;
+}
+
+.project-hover .project-info h2 {
+    transform: translateX(8px);
+}
+
+.project-info > p {
+    max-width: 420px;
+    font-size: 13px;
+    color: #55554f;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 20px;
+}
+
+.technologies span {
+    padding: 5px 9px;
+    border: 1px solid #c9c6be;
+    border-radius: 3px;
+    font-size: 10px;
+    color: #4f4d47;
+}
+
+
+/* =========================
+   PROJECT BUTTONS
+========================= */
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.project-buttons button {
+    padding: 9px 14px;
+    border: 1px solid #b8b5ad;
+    border-radius: 3px;
+    background: transparent;
+    color: #20221f;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.project-buttons button:hover {
+    background: #20221f;
+    color: white;
+}
+
+.project-info small {
+    display: block;
+    margin-top: 25px;
+    font-size: 8px;
+    color: #66635c;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 70px 60px;
+    background: #20221f;
+    color: white;
+}
+
+.contact > p {
+    font-size: 10px;
+    color: #a8aaa3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 30px;
+}
+
+.contact-content h2 {
+    font-size: 55px;
+    line-height: 0.95;
+    letter-spacing: -3px;
+}
+
+.contact-content > div:first-child p {
+    margin-top: 25px;
+    color: #a8aaa3;
+    font-size: 13px;
+}
+
+.contact-links {
+    padding-top: 5px;
+}
+
+.contact-links > a {
+    display: block;
+    padding: 13px 15px;
+    background: #315cff;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.contact-links > p {
+    margin-top: 30px;
+    color: #777a73;
+    font-size: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: #20221f;
+    color: #777a73;
+    border-top: 1px solid #383a36;
+    font-size: 10px;
+}
+
+footer a {
+    color: #777a73;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* =========================
+   TABLET
+   769px - 1024px
+========================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 25px 40px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 90px);
+        padding: 60px 40px;
+        background-size: 45% auto;
+        background-position: right center;
+    }
+
+    .hero-content {
+        width: 65%;
+    }
+
+    .about {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .skills {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .work {
+        padding: 40px;
+    }
+
+    .contact {
+        padding: 60px 40px;
+    }
+
+    footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   768px AND BELOW
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 20px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        padding: 80px 25px 100px;
+
+        background-size: 65% auto;
+        background-position: right bottom;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .role {
+        margin: 0 0 25px;
+    }
+
+    .hero-text {
+        margin: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-text h2 {
+        font-size: 25px;
+    }
+
+    .description {
+        margin: 30px 0 0;
+        font-size: 16px;
+    }
+
+    .buttons {
+        margin: 30px 0 0;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .bottom-text {
+        margin: 40px 0 0;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        margin: 80px 25px 0;
+    }
+
+    .headline h2 {
+        font-size: 38px;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+
+    /* SKILLS */
+
+    .skills {
+        margin: 30px 25px 80px;
+    }
+
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        border-right: 1px solid #dedcd5;
+        border-bottom: 1px solid #dedcd5;
+    }
+
+    .skill:first-child {
+        border-left: 1px solid #dedcd5;
+    }
+
+
+    /* WORK */
+
+    .work {
+        padding: 40px 25px;
+    }
+
+    .work-heading {
+        display: block;
+    }
+
+    .work-heading h2 {
+        font-size: 40px;
+    }
+
+    .work-heading p {
+        margin-top: 20px;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-info {
+        padding-right: 0;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding: 60px 25px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-content h2 {
+        font-size: 48px;
+    }
+
+    footer {
+        padding: 20px 25px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   480px AND BELOW
+========================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        gap: 12px;
+        padding: 18px 15px;
+    }
+
+    .navbar nav {
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 60px 20px 100px;
+
+        background-size: 80% auto;
+        background-position: right bottom;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .role {
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-text h2 {
+        font-size: 21px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+
+    /* ABOUT */
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .about {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    /* SKILLS */
+
+    .skills {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    /* WORK */
+
+    .work {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .work-heading h2 {
+        font-size: 34px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-content h2 {
+        font-size: 40px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* =====================================
+   THEME TOGGLE BUTTON
+===================================== */
+
+#theme-toggle {
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: rotate(20deg) scale(1.1);
+}
+
+
+/* =====================================
+   TYPING EFFECT
+===================================== */
+
+.role.typing::after {
+    content: "|";
+    margin-left: 4px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* =====================================
+   SCROLL REVEAL
+===================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+body.dark-mode {
+    background: #1c1b18;
+    color: #f5f3ee;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+body.dark-mode .navbar {
+    background: #1c1b18;
+    border-color: #55524c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+body.dark-mode .hero {
+    background-color: #1c1b18;
+    border-color: #55524c;
+}
+
+/* Make the light hero image darker */
+body.dark-mode .hero {
+    background-blend-mode: multiply;
+    background-color: #1c1b18;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+body.dark-mode .about {
+    color: #f5f3ee;
+}
+
+body.dark-mode .about-info {
+    border-color: #55524c;
+}
+
+body.dark-mode .about-info p {
+    color: #bdb9b0;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+body.dark-mode .skills {
+    color: #f5f3ee;
+}
+
+body.dark-mode .skill-container {
+    border-color: #55524c;
+}
+
+body.dark-mode .skill {
+    border-color: #55524c;
+}
+
+body.dark-mode .skill:hover {
+    background: #25241f;
+}
+
+body.dark-mode .skill p {
+    color: #bdb9b0;
+}
+
+
+/* =========================
+   WORK / PROJECTS
+========================= */
+
+body.dark-mode .work {
+    background: #1c1b18;
+    color: #f5f3ee;
+    border-color: #55524c;
+}
+
+body.dark-mode .work-heading {
+    border-color: #55524c;
+}
+
+body.dark-mode .work-heading p {
+    color: #bdb9b0;
+}
+
+body.dark-mode .project {
+    background: #1c1b18;
+    border-color: #55524c;
+}
+
+body.dark-mode .project-info h2 {
+    color: #f5f3ee;
+}
+
+body.dark-mode .project-info > p {
+    color: #bdb9b0;
+}
+
+body.dark-mode .project-info small {
+    color: #99958c;
+}
+
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+body.dark-mode .technologies span {
+    color: #bdb9b0;
+    border-color: #66635c;
+}
+
+
+/* =========================
+   PROJECT BUTTONS
+========================= */
+
+body.dark-mode .project-buttons button {
+    color: #f5f3ee;
+    background: transparent;
+    border-color: #66635c;
+}
+
+body.dark-mode .project-buttons button:hover {
+    background: #f5f3ee;
+    color: #20221f;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+body.dark-mode .contact {
+    background: #11110f;
+    color: #f5f3ee;
+}
+
+body.dark-mode .contact > p {
+    color: #a8aaa3;
+}
+
+body.dark-mode .contact-content > div:first-child p {
+    color: #bdb9b0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+body.dark-mode footer {
+    background: #11110f;
+    color: #99958c;
+    border-color: #383a36;
+}
+
+body.dark-mode footer a {
+    color: #99958c;
+}
+
+body.dark-mode footer a:hover {
+    color: white;
+}
+
+
+/* =========================
+   GENERAL TEXT
+========================= */
+
+body.dark-mode .description {
+    color: #bdb9b0;
+}
+
+body.dark-mode .bottom-text {
+    color: #99958c;
+    border-color: #55524c;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+body.dark-mode a {
+    color: #f5f3ee;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+body.dark-mode .buttons button {
+    background: #f5f3ee;
+    color: #20221f;
+    border-color: #f5f3ee;
+}
+
+body.dark-mode .buttons button:hover {
+    background: #315cff;
+    color: white;
+    border-color: #315cff;
+}
+
+
+/* =========================
+   THEME TOGGLE
+========================= */
+
+body.dark-mode #theme-toggle {
+    color: #f5f3ee;
+    border-color: #777871;
+}
+
+
+/* =========================
+   TYPING EFFECT
+========================= */
+
+body.dark-mode .role {
+    color: #4d73ff;
+}
+
+
+/* =========================
+   DARK MODE PROJECT IMAGE
+========================= */
+
+body.dark-mode .project-image {
+    background: #25241f;
+}
+
+/* =====================================
+   DARK MODE PROJECT FIX
+===================================== */
+
+body.dark-mode .project-info h2 {
+    color: #f5f3ee;
+}
+
+body.dark-mode .project-info > p {
+    color: #bdb9b0;
+}
+
+body.dark-mode .project-info small {
+    color: #99958c;
+}
+
+body.dark-mode .project-buttons button {
+    color: #f5f3ee;
+    background: transparent;
+    border: 1px solid #66635c;
+}
+
+body.dark-mode .technologies span {
+    color: #bdb9b0;
+    border: 1px solid #66635c;
+}
